@@ -1,0 +1,20 @@
+seed: 42
+device: auto
+retrieval:
+  top_k: 8
+  dense_weight: 0.65
+  bm25_weight: 0.35
+  rerank_top_k: 6
+trust:
+  threshold: 0.55
+  weights:
+    relevance: 0.30
+    source_reliability: 0.20
+    consistency: 0.20
+    evidence_support: 0.20
+    poison_risk: 0.10
+healing:
+  max_rounds: 2
+  min_trusted_evidence: 1
+generation:
+  max_new_tokens: 256

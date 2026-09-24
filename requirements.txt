@@ -1,0 +1,21 @@
+# Core
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.5
+PyYAML>=6.0
+python-dotenv>=1.0
+pytest>=8.0
+
+# UI
+streamlit>=1.40
+
+# Optional research models (install after CUDA-enabled PyTorch)
+torch
+transformers>=4.45
+sentence-transformers>=3.0
+rank-bm25>=0.2.2
+pypdf>=5.0
+
+# Optional generation / quantization for RTX 3050 6GB
+accelerate>=1.0
+bitsandbytes>=0.45; platform_system == 'Windows'
